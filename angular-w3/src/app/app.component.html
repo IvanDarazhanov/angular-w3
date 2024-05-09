@@ -1,0 +1,42 @@
+<div class="video-data">
+@if(this.index>=0){
+  {{this.index+1}}
+}
+@if(inputCheck==false){
+  <br>
+Заглавие<br>
+<input [(ngModel)]="modelTitle"  type="text" style="border: red solid;"><br>
+<p style="color: red;">Минимално количество символи 5</p>
+<br>
+Бележка
+<textarea [(ngModel)]="modelNote" type="textarea" style="border: red solid;"></textarea>
+<p style="color: red;">Минимално количество символи 7</p>
+}
+@else {
+  Заглавие
+  <input [(ngModel)]="modelTitle"  type="text">
+<br>
+Бележка
+<textarea [(ngModel)]="modelNote" type="textarea"></textarea>
+}
+<br>
+<button (click)="SaveNote()">Запази бележка</button>
+<button (click)="AddNote()">Добави бележка</button>
+</div>
+
+<div>Всички бележки</div>
+@for (element of notesArr; track element) {
+  <div (click)="ShowOptions($index)" class="element">
+
+      <div><u>Бележка номер: {{$index+1}}</u></div>
+      <div>{{element.title}}</div>
+      <div>{{element.notes}}</div>
+
+      @if(this.selectedNote==$index){
+        <div id="optionPanel" >
+        <button (click)="editNote($index)">Редактирай</button>
+        <button (click)="deleteNote($index)">Изтрии</button>
+        </div>
+    }
+  </div>  
+}

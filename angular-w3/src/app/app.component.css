@@ -1,0 +1,37 @@
+.button {
+    width: 200px;
+    background: #dedede;
+    border: solid #000 1px;
+}
+
+.video-wrapper{
+    display: flex;
+}
+
+.video-placeholder{
+    width: 300px;
+    border: solid #dedede ;
+    padding: 8px;
+}
+
+.error{
+    color: red;
+    font-style: bold;
+}
+
+.element{
+    border: solid gray 2px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width:fit-content;
+    height: fit-content;
+}
+
+.video-data{
+    padding: 20px;
+    width: 30%;
+    height: fit-content;
+    border: #000 2px solid;
+    border-radius: 15px;
+}
