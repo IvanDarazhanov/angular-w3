@@ -1,37 +1,73 @@
-.button {
-    width: 200px;
-    background: #dedede;
-    border: solid #000 1px;
-}
-
-.video-wrapper{
-    display: flex;
-}
-
-.video-placeholder{
-    width: 300px;
-    border: solid #dedede ;
-    padding: 8px;
-}
-
-.error{
-    color: red;
-    font-style: bold;
-}
-
-.element{
-    border: solid gray 2px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 10px;
-    width:fit-content;
-    height: fit-content;
-}
-
-.video-data{
+.video-data {
+    margin: 20px;
     padding: 20px;
-    width: 30%;
-    height: fit-content;
-    border: #000 2px solid;
-    border-radius: 15px;
-}
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .video-data input[type="text"],
+  .video-data textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .video-data p {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .video-data button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .video-data button:hover {
+    background-color: #45a049;
+  }
+
+  .element {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .element:hover {
+    background-color: #f0f0f0;
+  }
+
+  .element div {
+    margin-bottom: 5px;
+  }
+
+  .element div:first-child {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .element button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .element button:hover {
+    background-color: #45a049;
+  }

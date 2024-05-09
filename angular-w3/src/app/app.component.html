@@ -33,7 +33,7 @@
       <div>{{element.notes}}</div>
 
       @if(this.selectedNote==$index){
-        <div id="optionPanel" >
+        <div>
         <button (click)="editNote($index)">Редактирай</button>
         <button (click)="deleteNote($index)">Изтрии</button>
         </div>

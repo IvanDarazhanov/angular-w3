@@ -66,6 +66,7 @@ export class AppComponent {
   private resetTempData(){
     this.modelTitle='';
     this.modelNote='';
+    this.inputCheck=true;
   }
 
 }
