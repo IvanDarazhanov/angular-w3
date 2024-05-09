@@ -49,7 +49,7 @@ export class AppComponent {
     }
   }
   
-  public editNote( index){
+  public editNote(index){
     this.index=index;
     this.modelTitle=this.notesArr[this.index].title;
     this.modelNote=this.notesArr[this.index].notes;
@@ -60,9 +60,6 @@ export class AppComponent {
   }
 
   public deleteNote(index){
-    if(index==0){
-      this.notesArr.splice(index,-1)
-    }
     this.notesArr.splice(index,1);
   }
 
