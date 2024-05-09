@@ -29,7 +29,7 @@ export class AppComponent {
   ];
 
   public AddNote() {
-    if(this.modelTitle.length>5&&this.modelNote.length>7){
+    if(this.modelTitle.length>=5&&this.modelNote.length>=7){
       this.notesArr.push({title:this.modelTitle, notes:this.modelNote});
       this.resetTempData();
       }
@@ -39,7 +39,7 @@ export class AppComponent {
   }
 
   public SaveNote(){
-    if(this.modelTitle.length>5&&this.modelNote.length>7){
+    if(this.modelTitle.length>=5&&this.modelNote.length>=7){
     this.notesArr[this.index].title=this.modelTitle;
     this.notesArr[this.index].notes=this.modelNote;
     this.resetTempData();
